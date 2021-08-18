@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Please pair a device first"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_round_star_24"
+        android:layout_marginRight="5dp"
+        android:id="@+id/aboutIV"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devices: "
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/backButton"
+        android:id="@+id/text"
+        android:textSize="25dp"/>
+
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Paired Devices"
+        android:id="@+id/pairedDevices"
+        android:layout_below="@id/deviceList"/>
+
+
+</RelativeLayout>
